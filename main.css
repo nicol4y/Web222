@@ -14,11 +14,12 @@ min-width: 500;
     
 }
 #first button {
-    border-radius: 20%;
+    border-radius: 15%;
     display:inline-block;
     border: none;
     background-color:blue;
     margin-top:60px;
     margin-bottom:20px;
     margin-left:30px;
+    
 }
