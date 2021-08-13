@@ -1,0 +1,24 @@
+#first{
+text-align:center;
+background-color: aquamarine;
+min-width: 500;
+
+}
+#first img{
+    padding-top: 20px
+}
+#first p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    padding-top: 10px;
+    
+}
+#first button {
+    border-radius: 20%;
+    display:inline-block;
+    border: none;
+    background-color:blue;
+    margin-top:60px;
+    margin-bottom:20px;
+    margin-left:30px;
+}
