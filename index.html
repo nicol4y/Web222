@@ -4,7 +4,7 @@
         <title>Nicolay</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="main.css" type="text/css"/>
-        <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css" />
+        
     </head>
 <body>
 <div id="first">
@@ -12,14 +12,113 @@
     alt="Nicolay">
     <p>Nicolay Caro Calderon</p>
     <a>Web Developer,Software Engineer<br></a>
-    <button type="button">📩 Resume</button>
+    <a href="#Turntables">
+    <button type="button" onclick="">📩 Resume</button>
+    </a>
+    <a href="#submit">
     <button type="button">Contact Me</button>
+    </a>
 </div>
     <div id="second">
-        <p>About me and Academic Honesty</p>
-        <p>Basic Information</p>
+        <div id="bars">
+        <p style="padding-left:20px;">
+            About me and Academic Honesty
+        </p>
+        <p style="padding-left:20px">
+            I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.
+        </p>
+        </div>
+        <div id="ss">
+            <p>
+                Basic Information<br>
+        </p>
+        </div>
+        <table>
+            <tr>
+                <td>Age:</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>nacaro-calderon@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Language:</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td>Class section:</td>
+                <td>222</td>
+            </tr>
+            <tr>
+                <td>Student id:</td>
+                <td>131706202</td>
+            </tr>
+            <tr>
+                <td>Instructor:</td>
+                <td>Ali Mahmoodi</td>
+            </tr>
+            
+        </table>
     </div>
+    <div id="Turntables">
+        <h2>
+            Education
+        </h2>
+        <div class="ed">
+            <p style="font-size:larger">Bachelor's degree<br></p>
+            
+            <p>2021-2022 [Expected]</p>
+            <p>Seneca College</p>
+        </div>
+        <div class="ed">
+            <p style="font-size:larger">Highschool degree<br></p>
+            
+            <p>2015-2019</p>
+            <p>John Doe Academy</p>
+        </div>
     </div>
+    <div id="submit">
+        <h1>Contact Me!</h1>
+        <form action="https://httpbin.org/post">
+            <label for="name">Your name:</label><br>
+  <input type="text" id="name" name="name"placeholder="name"><br>
+  <label for="email">Your email:</label><br>
+  <input type="email" id="email" name="email"placeholder="johndoe@gmail.com"><br>
+<label for="city"><br>City:<br></label>
+<input list="common-cities"  id="city" name="city"/>
+<label for="zip_code"><br><br>Postal code:<br></label>
+<input type="text" id="zip_code" name="zip_code"
+pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$" title="Postal code">
 
+<p>Reason</p>
+
+<input type="radio" id="hiring" name="hiring" value="Hiring"  onclick="show()">
+  <label for="hiring">Hiring</label><br>
+  <input type="radio" id="Comment" name="comm" value="Comment">
+  <label for="Comment">Comment</label><br>
+  <input type="radio" id="Question" name="question" value="Question">
+  <label for="Question">Question</label>
+<br>
+<div id="wages"></div>
+<label for="Txt"><br>Message:<br></label>
+<textarea id="Message" name="Message" rows="6" cols="65"></textarea>
+<label for="phone"><br>Phone number:</label><br>
+<input type="text" id="phone" name="phone" pattern="^\d+$"><br><br>
+<input type="submit">
+</form>
+</div>
+<datalist id="common-cities">
+    <option value="Toronto">
+    <option value="Vancouver">
+    <option value="Quebec City">
+    <option value="Ottawa">
+    <option value="Edmonton">
+       <option value="Montreal"> 
+</datalist>
+
+
+    </div>
 </body>
+<script type="text/javascript" src="functions.js"></script>
 </html>
